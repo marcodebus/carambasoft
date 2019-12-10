@@ -6,7 +6,9 @@
 		$("#preloader").delay(350).fadeOut("slow");
 	})  
 	
-
+$(window).load(function() {
+  $("body").removeClass("preload");
+});
 	
 	
 	$(document).ready(
@@ -14,14 +16,16 @@
 		$("html").niceScroll();
 		}
 	);	
-
 	
-$('#circle1').circleType({radius: 384});	
 	
-$('#circle2').circleType({radius: 768, dir:-1});	
+	  $(document).ready(function() {"use strict";
+	    $( '.words' ).lettering('words');
+	  });	
+	
+	
 	
    $(window).scroll(function () { 
-        var $Fade = $('#home');
+        var $Fade = $('.home-text');
         //Get scroll position of window 
         var windowScroll = $(this).scrollTop();
         //Slow scroll and fade it out 
@@ -125,26 +129,6 @@ $(document).ready(function(){
 
 
 
- $(function(){
-            $('#maximage').maximage({
-                cycleOptions: {
-                    fx: 'fade',
-                    speed: 1000, // Has to match the speed for CSS transitions in jQuery.maximage.css (lines 30 - 33)
-                    timeout: 4000,
-                    prev: '#arrow_left',
-                    next: '#arrow_right',
-                    pause: 1,
-                    
-                },
-                onFirstImageLoaded: function(){
-                    jQuery('#cycle-loader').hide();
-                    jQuery('#maximage').fadeIn('slow');
-                }
-				
-				
-            });
-    
-        });		
 
 	
 
@@ -250,6 +234,7 @@ $(document).ready(function(){
 		//xPosition - Horizontal position of the element
 		//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
 		//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+		$('#home').parallax("50%", 0.2);
 		$('#parallax-1').parallax("50%", 0.2);
 		$('#parallax-2').parallax("50%", 0.2);
 		$('#parallax-3').parallax("50%", 0.2);
