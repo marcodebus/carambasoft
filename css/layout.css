@@ -503,10 +503,10 @@
 	display: inline-block;
 }
 .word1 {
-	-webkit-animation-delay: 3.5s;
-	-moz-animation-delay: 3.5s;
-	-o-animation-delay: 3.5s;
-	animation-delay: 3.5s;
+	-webkit-animation-delay: 2.5s;
+	-moz-animation-delay: 2.5s;
+	-o-animation-delay: 2.5s;
+	animation-delay: 2.5s;
 	-webkit-animation-name: fadeInDown;
 	-moz-animation-name: fadeInDown;
 	-o-animation-name: fadeInDown;
@@ -543,10 +543,10 @@
 	-moz-animation-duration: 1.35s;
 }
 .word3 {
-	-webkit-animation-delay: 3.2s;
-	-moz-animation-delay: 3.2s;
-	-o-animation-delay: 3.2s;
-	animation-delay: 3.2s;
+	-webkit-animation-delay: 2.2s;
+	-moz-animation-delay: 2.2s;
+	-o-animation-delay: 2.2s;
+	animation-delay: 2.2s;
 	-webkit-animation-name: bounceInDown;
 	-moz-animation-name: bounceInDown;
 	-o-animation-name: bounceInDown;
@@ -563,10 +563,10 @@
 	-moz-animation-duration: 1.35s;
 }
 .word4 {
-	-webkit-animation-delay: 3.8s;
-	-moz-animation-delay: 3.8s;
-	-o-animation-delay: 3.8s;
-	animation-delay: 3.8s;
+	-webkit-animation-delay: 2.8s;
+	-moz-animation-delay: 2.8s;
+	-o-animation-delay: 2.8s;
+	animation-delay: 2.8s;
 	-webkit-animation-name: fadeInDown;
 	-moz-animation-name: fadeInDown;
 	-o-animation-name: fadeInDown;
@@ -2104,10 +2104,10 @@
 	padding-bottom:10px;
 }
 #team .title .angle {
-	left:195px;
+	left:130px;
 }
 #team .title .line-vert {
-	left:195px;
+	left:130px;
 }
 #team .title .angle  h1{
 	margin-left:-5px;
@@ -2249,8 +2249,8 @@
 	position:relative;
 }
 .slider2 img{
-	width:100%;
-	height:auto;
+	width:75%;
+	height:130px;
 }
 
 
@@ -2285,10 +2285,10 @@
 	padding-bottom:45px;
 }
 #services .title .angle {
-	left:175px;
+	left:155px;
 }
 #services .title .line-vert {
-	left:175px;
+	left:155px;
 }
 #services .background-pat1-last{
 	padding-bottom:10px;
@@ -2525,13 +2525,13 @@
 }
 
 #portfolio .title .angle {
-	left:170px;
+	left:240px;
 }
 #portfolio .title .line-vert {
-	left:170px;
+	left:240px;
 }
 #portfolio .title .angle  h1{
-	margin-left:-5px;
+	margin-left:-1px;
 }
 .gallery-item{
 	position:relative;
@@ -2942,13 +2942,13 @@ a.link-blog:hover{
 	padding-bottom:25px;
 }
 #contact .title .angle {
-	left:105px;
+	left:125px;
 }
 #contact .title .line-vert {
-	left:105px;
+	left:125px;
 }
 #contact .title .angle  h1{
-	margin-left:-10px;
+	margin-left:-1px;
 }
 .contact-info {
 	position:relative;
