@@ -358,7 +358,7 @@
     animation: fallingLeaves 9s infinite  linear;
 }
 .fallingLeaves span:nth-child(5n+5) {
-	background:url("../images/oak1.gif");
+	background:url("../images/flocke1.png");
     width: 35px;
     height: 35px;
 
@@ -367,7 +367,7 @@
     animation-delay: 1.3s;
 }
 .fallingLeaves span:nth-child(3n+2) {
-	background:url("../images/oak2.gif");
+	background:url("../images/flocke2.png");
     width: 35px;
     height: 35px;
     -webkit-animation-delay: 1.5s;
@@ -375,7 +375,7 @@
     animation-delay: 1.5s;
 }
 .fallingLeaves span:nth-child(2n+1) {
-	background:url("../images/oak3.gif");
+	background:url("../images/flocke3.png");
     width: 21px;
     height: 21px;
 
@@ -385,7 +385,7 @@
 }
 
 .fallingLeaves span:nth-child(3n+1) {
-	background:url("../images/oak4.gif");
+	background:url("../images/flocke4.png");
     width: 21px;
     height: 21px;
 
@@ -394,7 +394,7 @@
     animation-delay: 2.7s;
 }
 .fallingLeaves span:nth-child(7n+2) {
-	background:url("../images/oak1.gif");
+	background:url("../images/flocke1.png");
     width: 35px;
     height: 35px;
 
@@ -403,7 +403,7 @@
     animation-delay: 3.5s;
 }
 .fallingLeaves span:nth-child(4n+5) {
-	background:url("../images/oak2.gif");
+	background:url("../images/flocke2.png");
     width: 35px;
     height: 35px;
 
@@ -412,7 +412,7 @@
     animation-delay: 5.5s;
 }
 .fallingLeaves span:nth-child(5n+2) {
-	background:url("../images/oak3.gif");
+	background:url("../images/flocke3.png");
     width: 21px;
     height: 21px;
 
