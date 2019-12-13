@@ -1,30 +1,10 @@
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]>
 <!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
-  <script>
-  window.location.hash="no-back-button";
-  window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history
-  window.onhashchange=function(){window.location.hash="no-back-button";}
-  </script>
 
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <script type="text/javascript" src="./View360/View360.js"></script>
-  <link rel="stylesheet" type="text/css" href="./View360/View360.css" />
-
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" type="text/css" href="./css/style.css" />
 
 
 
@@ -32,10 +12,14 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Creatrix</title>
+	<title>CS Kälte Klima Webdesign Carambasoft</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
-
+  <script>
+  window.location.hash="no-back-button";
+  window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history
+  window.onhashchange=function(){window.location.hash="no-back-button";}
+  </script>
 	<!-- Mobile Specific Metas
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -103,57 +87,24 @@
 
 	<div class="singleproject-top">
 		<div class="container">
-			<div class="twelve columns">
-				<div class="media">
-
-          <script>
-
-              document.addEventListener( "DOMContentLoaded", onLoaded );
-
-              function onLoaded (){
-
-                  var view = new View360();
-                  view.setNavigationConfig({
-                      btnWidth:30,
-                      btnHeight:30
-                  });
-                  view.setImagesPattern( "image_%ROW_%COL.jpg" );
-                  view.setFitMode( "fit" );
-                  view.setConfig({
-                          imagesNumbering:1,
-                          imagesNumberingUpDown:1 ,
-                          opositeDirection:true
-                  });
-                  view.setImagesDirectory( "products/truck-1024" );
-                  view.start( document.getElementById("view360") );
-
-              }
-
-          </script>
-
-          <style>
-
-              .View360-holder{
-                  border: 1px solid #666;
-                  width: 200px;
-              }
-
-          </style>
-
-
-          <div id="view360"></div>
-            <!--
-            <img src="images/1.jpg" alt="">
-            -->
+			<div class="ten columns">
+				<div id="slider">
+					<ul class="bxslider">
+						<li><img src="images/dsgvo1.png" alt=""/></li>
+            <li><img src="images/dsgvo2.png" alt=""/></li>
+					</ul>
 				</div>
 			</div>
-			<div class="four columns">
-				<h3>3D Tablet</h3>
-				<p><strong>Kunde:</strong> Anonym</p>
-				<p><strong>Datum:</strong> 26. April, 2019</p>
+			<div class="six columns">
+				<h3>Impressum</h3>
+				<p><strong>Kunde:</strong> CS Klimatechnik</p>
+				<p><strong>Ersteller:</strong> Marco Debus</p>
+				<p><strong>Datum:</strong> 30. September, 2019</p>
+				<p><strong>Dauer Erstellung:</strong> 14 Tage</p>
+				<p><strong>Besonderheiten: </strong> Animation, Datenbankverknüpfung, Backend</p>
 				<div class="btn-wrap">
 					<p>
-						<button>Jetzt Anfragen</button>
+						<a href="https://haida.de"><button>Seite Besichtigen</button></a>
 					</p>
 				</div>
 			</div>
@@ -163,18 +114,15 @@
 		<div class="container">
 			<div class="singleproject1-body">
 				<div class="sixteen columns">
-					<h4>Bild Animation</h4>
-					<p><span class="dropcap-orange">Animation bestehend aus mehreren Einzelbildern.</p>
-
-
-
+					<h4>Datenschutz</h4>
+					<p>
+            bla bla bla ... wir klauen eure Daten ....
+            <br>
+          </p>
+				</div>
 			</div>
 		</div>
 	</div>
-
-
-
-
 
 
 
@@ -186,8 +134,8 @@
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
 <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
-<script type="text/javascript" src="js/jquery.fitvids.js"></script>
-<script type="text/javascript" src="js/singleproject2.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="js/singleproject1.js"></script>
 
 
 <!-- End Document

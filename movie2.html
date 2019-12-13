@@ -3,7 +3,11 @@
 <!--[if gt IE 8]>
 <!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
-
+	<script>
+  window.location.hash="no-back-button";
+  window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history
+  window.onhashchange=function(){window.location.hash="no-back-button";}
+  </script>
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
@@ -43,7 +47,36 @@
 	</div>
 
 
+	<nav id="navigation">
+    <a href="index.html#home" class="scroll" ><img class="logo" alt='logo' src='logoneu.png'></a>
+                    <ul   id="menu">
+                      <li>
+                          <a href="index.html#home" class="scroll">Home</a>
+                      </li>
+                      <li class="current">
+                          <a href="index.html#profile" class="scroll">Über Uns</a>
+                      </li>
+                      <li>
+                          <a href="index.html#team" class="scroll">Leitung</a>
+                      </li>
+                      <li>
+                          <a href="index.html#services" class="scroll">Leistungen</a>
+                      </li>
+                      <li>
+                          <a href="index.html#portfolio" class="scroll">Portfolio</a>
+                      </li>
+                      <li>
+                          <a href="index.html#parallax-4" class="scroll">News</a>
+                      </li>
+                      <li>
+                          <a href="index.html#contact" class="scroll">Kontakt</a>
+                      </li>
+                      <li>
+                          <a href="datenschutz.html" class="scroll">Rechtliches</a>
+                      </li>
 
+                    </ul>
+  </nav>
 
 
 

@@ -10,7 +10,11 @@
 	<title>CS Kälte Klima Webdesign Carambasoft</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
-
+  <script>
+  window.location.hash="no-back-button";
+  window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history
+  window.onhashchange=function(){window.location.hash="no-back-button";}
+  </script>
 	<!-- Mobile Specific Metas
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -43,7 +47,36 @@
 	</div>
 
 
+  <nav id="navigation">
+    <a href="index.html#home" class="scroll" ><img class="logo" alt='logo' src='logoneu.png'></a>
+                    <ul   id="menu">
+                      <li>
+                          <a href="index.html#home" class="scroll">Home</a>
+                      </li>
+                      <li class="current">
+                          <a href="index.html#profile" class="scroll">Über Uns</a>
+                      </li>
+                      <li>
+                          <a href="index.html#team" class="scroll">Leitung</a>
+                      </li>
+                      <li>
+                          <a href="index.html#services" class="scroll">Leistungen</a>
+                      </li>
+                      <li>
+                          <a href="index.html#portfolio" class="scroll">Portfolio</a>
+                      </li>
+                      <li>
+                          <a href="index.html#parallax-4" class="scroll">News</a>
+                      </li>
+                      <li>
+                          <a href="index.html#contact" class="scroll">Kontakt</a>
+                      </li>
+                      <li>
+                          <a href="datenschutz.html" class="scroll">Rechtliches</a>
+                      </li>
 
+                    </ul>
+  </nav>
 
 
 
@@ -53,7 +86,7 @@
 				<div id="slider">
 					<ul class="bxslider">
 						<li><img src="images/webseiten/seite1.png" alt=""/></li>
-            <li><img src="images/webseiten/seite1-2.png" alt=""/></li>
+            <li><img src="images/webseiten/seite1-1.png" alt=""/></li>
 					</ul>
 				</div>
 			</div>

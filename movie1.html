@@ -3,7 +3,11 @@
 <!--[if gt IE 8]>
 <!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
-
+	<script>
+  window.location.hash="no-back-button";
+  window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history
+  window.onhashchange=function(){window.location.hash="no-back-button";}
+  </script>
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
@@ -42,7 +46,36 @@
 		<div id="status">&nbsp;</div>
 	</div>
 
+	<nav id="navigation">
+    <a href="index.html#home" class="scroll" ><img class="logo" alt='logo' src='logoneu.png'></a>
+                    <ul   id="menu">
+                      <li>
+                          <a href="index.html#home" class="scroll">Home</a>
+                      </li>
+                      <li class="current">
+                          <a href="index.html#profile" class="scroll">Über Uns</a>
+                      </li>
+                      <li>
+                          <a href="index.html#team" class="scroll">Leitung</a>
+                      </li>
+                      <li>
+                          <a href="index.html#services" class="scroll">Leistungen</a>
+                      </li>
+                      <li>
+                          <a href="index.html#portfolio" class="scroll">Portfolio</a>
+                      </li>
+                      <li>
+                          <a href="index.html#parallax-4" class="scroll">News</a>
+                      </li>
+                      <li>
+                          <a href="index.html#contact" class="scroll">Kontakt</a>
+                      </li>
+                      <li>
+                          <a href="datenschutz.html" class="scroll">Rechtliches</a>
+                      </li>
 
+                    </ul>
+  </nav>
 
 
 
@@ -76,7 +109,7 @@
 			<div class="singleproject1-body">
 				<div class="sixteen columns">
 					<h4>Image Film Zahnarzt Fuchs Alzenau</h4>
-					<p><span class="dropcap-orange">N</span>ullam mattis condimentum molestie. Nam gravida elementum dui sit amet ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a velit libero, eu aliquam nisi. Integer ac massa tortor, at eleifend nisi. Nulla feugiat sodales mi, vitae aliquam quam imperdiet at. Donec vitae ante quis sapien imperdiet rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Quisque in tortor magna. Donec porttitor molestie placerat. Mauris tempor urna a libero tincidunt viverra.</p>
+					<p>Unsere Zahnarztpraxis in Alzenau-Hörstein besteht seit 1992. Wir decken alle Bereiche der modernen Zahnmedizin ab. Unser Tätigkeitsschwerpunkt liegt in der Ästhetischen Zahnheilkunde. Wir legen stets höchsten Wert auf eine gute Beratung ,eine ruhige Atmosphäre und eine herzliche, zuvorkommende Behandlung unserer Patienten mit möglichst kurzen Wartezeiten. Regelmäßige Fortbildungen sind bei uns selbstverständlich. </p>
 				</div>
 			</div>
 		</div>
