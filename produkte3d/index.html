@@ -1,0 +1,310 @@
+<html>
+    <head>
+        <title></title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <script type="text/javascript" src="./View360/View360.js"></script>
+        <link rel="stylesheet" type="text/css" href="./View360/View360.css" />
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    </head>
+    <body>
+
+        <div id="content">
+            <div id="headerOuter">
+                <div id="header">
+                    <div class="logo"></div>
+                    <div class="menu">
+                        <a href="index.html">HOME</a>                         
+                        <a href="examples.html">EXAMPLES</a>
+                        <a href="documentation.html">DOCUMENTATION</a>
+                        <a href="support.html">SUPPORT</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <script>
+            
+                document.addEventListener("DOMContentLoaded", onLoaded);
+            
+                function onLoaded(){
+
+                    var view = new View360();
+                     view.setFitMode( "fit" );
+                    view.setImagesDirectory("products/truck-1024");
+                    view.setImagesPattern( "image_%ROW_%COL.jpg" );
+                   
+                    view.setConfig({
+                        rows:1,
+                        columns:36,
+                        width: 567,
+                        height: 322  ,
+                        imagesNumbering:1,
+                        imagesNumberingUpDown:1 ,
+                        opositeDirection:true              
+                    });
+                
+                    view.setNavigationConfig({
+                        btnWidth:25,
+                        btnHeight:25,
+                        showPlay: true,
+                        showPause: true,
+                        showZoom: true,
+                        showTurn: true,
+                        turnSpeed: 40, 
+                        showFullscreen: true
+                    });
+                    view.setLoaderInfoConfig({
+                        loadingTitle: "3D and 360 degree product view",
+                        loadingSubtitle: "Native HTML5 & JavaScript & CSS",
+                        loadingMessage: "3D model loading ..."
+                    });
+                    view.setFullSizeLoaderInfoConfig({
+                        holderClassName: "View360-fullSizeLoader",
+                        circleLineWidth:40,
+                        circleLineColor: "#888",
+                        modalOpacity:0,
+                        loadingTitle: "Loading fullsize images...",
+                        circleWidth:50
+                    });
+                    view.start( document.getElementById("responsive-pc-360") );
+                
+                
+                
+                    var view2 = new View360();
+                    view2.setFitMode( "fit" );
+                    view2.setImagesDirectory("products/truck-1024");
+                    view2.setImagesPattern( "image_%ROW_%COL.jpg" );
+                    view2.setConfig({
+                        rows:1,
+                        columns:36,
+                        width: 346,
+                        height: 216,
+                        imagesNumbering:1,
+                        imagesNumberingUpDown:1  ,
+                        opositeDirection:true           
+                    });
+                    view2.setNavigationConfig({
+                        btnWidth:25,
+                        btnHeight:25, showPlay: true,
+                        showPause: true,
+                        showZoom: true,
+                        showTurn: true,
+                        turnSpeed: 40, 
+                        showFullscreen: true
+                    });
+                    view2.setLoaderInfoConfig({
+                    });
+                    view2.setFullSizeLoaderInfoConfig({
+                        holderClassName: "View360-fullSizeLoader",
+                        circleLineWidth:40,
+                        circleLineColor: "#888",
+                        modalOpacity:0,
+                        loadingTitle: "Loading fullsize images...",
+                        circleWidth:50
+                    });
+                 
+
+                    view2.start( document.getElementById("responsive-laptop-360") );
+         
+
+         
+                    var view3 = new View360();
+                    view3.setFitMode( "fit" );
+                    view3.setImagesDirectory("products/truck-1024");
+                    view3.setImagesPattern( "image_%ROW_%COL.jpg" );
+                    view3.setConfig({
+                        rows:1,
+                        columns:36,
+                        width: 231,
+                        height: 177  ,
+                        imagesNumbering:1,
+                        imagesNumberingUpDown:1    ,
+                        opositeDirection:true           
+                    });
+                    view3.setNavigationConfig({
+                        showButtons: false
+                    });
+
+
+                    view3.start( document.getElementById("responsive-tablet-360") );
+                
+
+                         
+                    var view4 = new View360();
+                    view4.setFitMode( "fit" );
+                    view4.setImagesDirectory("products/truck-1024");
+                    view4.setImagesPattern( "image_%ROW_%COL.jpg" );
+                    view4.setConfig({
+                        rows:1,
+                        columns:36,
+                        width: 94,
+                        height: 68   ,
+                        imagesNumbering:1,
+                        imagesNumberingUpDown:1,
+                        opositeDirection:true            
+                    });
+                    view4.setNavigationConfig({
+                        showButtons: false
+                    });
+
+                    view4.setLoaderInfoConfig({
+                   
+                        circleWidth:"42",
+                        circleLineWidth:"4"
+                    });
+
+                    view4.start( document.getElementById("responsive-phone-360") );
+                } 
+
+            </script>
+
+
+            <div id="introHeadline">
+                <div class="title"><h1>3D & 360 PRODUCT VIEWER | NATIVE HTML5 AND JAVASCRIPT</h1></div>
+                <div class="subtitle"> FULLY FEATURED AND EASY TO USE</div>
+
+            </div>
+            
+            <div id="intro">
+
+                <div class="responsive-pc"><div id="responsive-pc-360"></div></div>
+                <div class="responsive-laptop"><div id="responsive-laptop-360"></div></div>
+                <div class="responsive-tablet"><div id="responsive-tablet-360"></div></div>
+                <div class="responsive-phone"><div id="responsive-phone-360"></div></div>      
+            </div>
+
+            <div id="description">
+                <div id="descriptionInner">
+                    <div class="features">
+                        <h2>Features</h2>
+                        <p> 
+                            3D and 360 degree rotation <br/>
+                            Fixed, responsive and lightbox layout  <br/>
+                            Easy to install and use <br/> 
+                            Retina ready <br/>
+                            Simple navigation for best user experience<br/>
+                            Native HTML5 & JavaScript <br/>
+                            No server side required <br/>
+                            Work on Desktop, Tablet and Phone <br/>
+                            Chrome, Firefox, Safari, IE8+, Opera <br/>
+                            Many configuration options: <br/>
+                            &nbsp;&nbsp;&nbsp;   - Set initial position <br/>
+                            &nbsp;&nbsp;&nbsp;   - Auto rotation and manual rotation <br/>
+                            &nbsp;&nbsp;&nbsp;   - Zoom and Pan <br/>
+                            &nbsp;&nbsp;&nbsp;   - Fullscreen mode <br/>
+                            &nbsp;&nbsp;&nbsp;   - Show/hide particular button <br/>
+                            &nbsp;&nbsp;&nbsp;   - Auto rotation speed <br/>
+                            &nbsp;&nbsp;&nbsp;   - Inertia configuration <br/>
+                            &nbsp;&nbsp;&nbsp;   - Buttons show/hide <br/>
+                            &nbsp;&nbsp;&nbsp;  - Mouse/touch sensitivity <br/>
+                        </p>
+                    </div>
+                    <div class="integration">
+                        <h2>Easy integration</h2>
+                        <p>
+                            Include js and css files:<br/>
+                            <span class="codeHolder">
+                                <span class="code">&lt;script type="text/javascript" src="./View360.js"&gt;&lt;/script&gt;</span><br/>
+                                <span class="code">&lt;link rel="stylesheet" type="text/css" href="./View360.css" /&gt;</span><br/>
+                            </span>
+
+                            Simple code use default configuration:<br/>
+
+
+
+                            <span class="codeHolder">
+
+                                <span class="code ">document.addEventListener( "DOMContentLoaded", onLoaded );</span><br/>
+                                <span class="code ">&nbsp;</span><br/>
+                                <span class="code ">function onLoaded (){</span><br/>
+                                <span class="code ">&nbsp;</span><br/>
+                                <span class="code tab1">var view = new View360();</span><br/>
+
+                                <span class="code tab1">view.setImagesPattern( "image_%COL_%ROW.png" );</span><br/>
+                                <span class="code tab1">view.setImagesDirectory( "./products/productdir" );</span><br/>
+                                <span class="code tab1">view.start( document.getElementById("view360") );</span><br/>
+                                <span class="code ">&nbsp;</span><br/>
+                                <span class="code ">}</span><br/>
+                            </span>
+
+                            View more code <a href='examples.php'>examples</a><br/>
+                            or read about availble methods in  <a href='documentation.php'>documentation</a><br/>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="steps">
+                <div class="title">Make outstanding product view in a three simple steps</div>
+                <div class="step step1">
+                    <span class="stepTitle">Capture</span><br/>
+                    <span class="stepDescription">Capture a set of images using DSLR, Compact camera or even Mobile device camera.</span>
+                </div>
+                <div class="step step2">
+                    <span class="stepTitle">Upload</span><br/>
+                    <span class="stepDescription">One directory per product. Name the directory by product name or ID.</span>
+                </div>
+                <div class="step step3">
+                    <span class="stepTitle">Publish</span><br/>
+                    <span class="stepDescription">Point View360 component to product directory. Adjust settings and play it. </span>
+                </div>
+            </div>
+
+            <div id="testimonials">
+                <div id="testimonialsInner">
+                    <h2>Testimonials</h2>
+                    <p>
+                        "  I bought News Ticker, FLV player and Navigation Pro components. They have almost the best features and documentation in the market. Whenever I get a problem, I submit a help ticket and will get very prompt response.
+                        Srdjan is a very nice guy and makes updates to his products immediately after feedback. I am very happy to buy the AWSSOFT products.
+                        Great products, great support!  " <br/>  
+                        <span class="signature">J. Leung </span><br/> 
+
+                        <br/>  
+
+
+                        "  AWSSOFT has excellent components with many advanced features. I developed my own flash photo galleries before because I use to feel that "components" were too modular. With AWSSOFT's Advanced Image Gallery, there are many customizable functions that killed this stereotype.
+
+                        The technical support is over and beyond ones expectations. Srdjan is extremely helpful, and you may feel confident that the customer services goes beyond the initial purchase.
+
+                        I would recommend AWSSOFT to anyone. Great product! Great customer service!  " <br/> 
+                        <span class="signature">Darren Wong </span><br/> 
+
+                        <br/>  
+
+
+                        "  Yes, really a great support. The best I received until now. I change mind on one product that I bought, due to the php safe running mode of my client server, and Srdjan offer me a refund. I was so surprised. I decide to choose another component which is excellent (image gallery). So I am really very happy of the care that I received and the products. This is my first comment I made on a bought product in the web.
+
+                        Thank you Srdjan! "<br/> 
+                        <span class="signature">Arthur</span><br/> 
+
+
+                    </p>
+                </div>
+            </div>
+
+            <div id="footerOuter">
+                <div id="footer">
+                    <div class="footerMenu">
+                        <a href="index.html">HOME</a>                         
+                        <a href="examples.html">EXAMPLES</a>
+                        <a href="documentation.html">DOCUMENTATION</a>
+                        <a href="support.html">SUPPORT</a>
+                    </div>
+                    <div class="copyright">
+                        Copyright &copy; Srdjan Arsic
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

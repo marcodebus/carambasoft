@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title></title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <script type="text/javascript" src="./View360/View360.js"></script>
+        <link rel="stylesheet" type="text/css" href="./View360/View360.css" />
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" type="text/css" href="./css/style.css" />
+        <style>
+            #view360{
+                width:100%;
+                min-height:200px;
+            }
+            .View360-holder{
+                border: 1px solid #666;    
+            }
+            #stopResponsiveBtn{
+                border:1px solid #666;
+                padding:5px 10px 5px 10px;
+                font-weight:400;
+                font-size:40px;
+                color:red;
+                cursor:pointer;
+                background:#F5F5F5;
+                display:inline-block;
+                margin-bottom:10px;
+
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div id="content">
+
+            <div id="headerOuter">
+                <div id="header">
+                    <div class="logo"></div>
+                    <div class="menu">
+                        <a href="index.html">HOME</a>                         
+                        <a href="examples.html">EXAMPLES</a>
+                        <a href="documentation.html">DOCUMENTATION</a>
+                        <a href="support.html">SUPPORT</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div id="contentHolder">
+
+                <div id="leftNavi">
+
+
+
+
+                    <h2>Examples</h2>
+                    <p> 
+
+                        <a href="example-inpage.html">1. In page example</a><br/>
+                        <a href="example-fitparent.html">2. Fit parent example</a><br/>
+                        <a href="example-lightbox.html">3. Lightbox example</a><br/>
+                        <a href="example-lightbox-responsive.html" target="_blank">4. Responsive Lightbox  <img style="vertical-align: middle;" src="images/fullscreen-inline-icon.png"/></a><br/>
+                            
+                        <a href="example-responsive.html">5. Responsive example</a><br/>
+                        <a href="example-fullview.html" target="_blank">6. Full view example <img style="vertical-align: middle;" src="images/fullscreen-inline-icon.png"/></a><br/> 
+                      
+
+                    </p>
+                </div>
+                <div id="rightContent">
+
+
+                    <script>
+    
+                        document.addEventListener( "DOMContentLoaded", onLoaded );
+
+                        function onLoaded (){
+
+                            var view = new View360();
+                            view.setMode("responsive");
+                             view.setImagesPattern( "image_%ROW_%COL.jpg" );
+                            view.setFitMode( "fit" );
+                            view.setConfig({
+                                    imagesNumbering:1,
+                                    imagesNumberingUpDown:1 ,
+                                    opositeDirection:true              
+                            });
+                            view.setImagesDirectory( "products/truck-1024" );
+                            view.start( document.getElementById("view360") );
+
+
+
+                            var el = document.getElementById("stopResponsiveBtn");
+                            el.addEventListener("click", function(){
+                                clearInterval(int1);
+                            }, false)
+    
+                            var width = 100;
+                            var dir = 1;
+                            var int1 = setInterval(function(){
+                                if(width==100) dir=-10;
+                                if(width==60) dir=10;
+                                width+=dir;
+                                document.getElementById("view360").style.width = width+"%";
+                            },500)
+                        }
+
+
+
+                    </script>
+
+
+
+                    <h2> Responsive example</h2>
+                    <div id="stopResponsiveBtn">
+                        STOP
+                    </div>
+                    <div id="view360">
+                    </div>
+                    <p>
+
+
+                        In this example we are programmatically changing width of <span class="code">#view360</span> div. 
+                        <br/>
+                        CSS we are using:
+                        <span class="codeHolder">
+                            <span class="code ">#view360{ </span><br/>
+                            <span class="code tab1">   width:100%;   </span><br/>
+                            <span class="code tab1">   min-height:200px; </span><br/>
+                            <span class="code "> } </span>
+                        </span>
+
+                        View360 take width of #view360 and automatically adjust height. <br/>
+
+
+                        <span class="codeHolder">
+
+                            <span class="code ">document.addEventListener( "DOMContentLoaded", onLoaded );</span><br/>
+                            <br/>
+                            <span class="code ">function onLoaded (){ </span><br/>
+                            <br/>
+                            <span class="code tab1">    var view = new View360(); </span><br/>
+                            <span class="code tab1">    view.setMode("responsive"); </span><br/>
+                            <span class="code tab1">    view.setImagesDirectory( "./products/sami-fullsize" ); </span><br/>
+                            <span class="code tab1">    view.start( document.getElementById("view360") ); </span><br/>
+                            <br/>
+                            <span class="code ">}</span><br/>
+
+                        </span>           
+
+
+                    </p>    
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <div id="footerOuter">
+                <div id="footer">
+                    <div class="footerMenu">
+                        <a href="index.html">HOME</a>                         
+                        <a href="examples.html">EXAMPLES</a>
+                        <a href="documentation.html">DOCUMENTATION</a>
+                        <a href="support.html">SUPPORT</a>
+                    </div>
+                    <div class="copyright">
+                        Copyright &copy; Srdjan Arsic
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+
+</html>
