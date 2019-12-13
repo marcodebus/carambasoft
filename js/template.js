@@ -1,45 +1,45 @@
 
-  
-  
+
+
 	$(window).load(function() {
 		$("#status").fadeOut();
 		$("#preloader").delay(350).fadeOut("slow");
-	})  
-	
+	})
+
 $(window).load(function() {
   $("body").removeClass("preload");
 });
-	
-	
+
+
 	$(document).ready(
-	function() {  
+	function() {
 		$("html").niceScroll();
 		}
-	);	
-	
-	
+	);
+
+
 	  $(document).ready(function() {"use strict";
 	    $( '.words' ).lettering('words');
-	  });	
-	
-	
-	
-   $(window).scroll(function () { 
+	  });
+
+
+
+   $(window).scroll(function () {
         var $Fade = $('.home-text');
-        //Get scroll position of window 
+        //Get scroll position of window
         var windowScroll = $(this).scrollTop();
-        //Slow scroll and fade it out 
+        //Slow scroll and fade it out
         $Fade.css({
             'margin-top': -(windowScroll / 0) + "px",
             'opacity': 1 - (windowScroll / 400)
         });
-    });	
-	
-new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );		
-	
-	
+    });
 
-	
+new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
+
+
+
+
 	/*global $:false */
 	$(function(){"use strict";
 		$('#home').css({'height':($(window).height())+'px'});
@@ -49,10 +49,10 @@ new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
 	});
 
 
-	
-	
-	
-    $(document).ready(function() {          
+
+
+
+    $(document).ready(function() {
         $('body').mousewheel(function(event, delta) {
             if (delta < 0) {
                 $('body').scrollTo('+=100', 1500 );
@@ -62,10 +62,10 @@ new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
 
             return false;
         });
-    });	
-	
+    });
 
-	
+
+
 /*global $:false */
 $(document).ready(function(){"use strict";
 	$(".scroll").click(function(event){
@@ -80,15 +80,15 @@ $(document).ready(function(){"use strict";
 
 		$('html, body').animate({scrollTop:target_top}, 1400);
 	});
-});	
-
-
-	
-	
+});
 
 
 
-		
+
+
+
+
+
 $(function(){
 
    $('ul li a').click(function(){
@@ -97,10 +97,10 @@ $(function(){
        item.addClass("current")
     });
 
-});	
+});
 $(document).ready(function(){
 		$("#navigation").sticky({topSpacing:0});
-		
+
 		$("ul#menu").click(function(){
 			if( $("ul#menu li").css('display') != 'inline' ){
 				if($("ul#menu").hasClass('showmenu')) {
@@ -112,7 +112,7 @@ $(document).ready(function(){
     			}
 			}
 		});
-		
+
 		$(window).resize(function() {
 			if( $(window).width() >= 960 ){
 				if( $("ul#menu li").css('display' ) == 'none' )
@@ -122,15 +122,15 @@ $(document).ready(function(){
 				$("ul#menu li").css('display','none');
 			}
 		});
-		
-	});	
+
+	});
 
 
 
 
 
 
-	
+
 
 
 
@@ -227,9 +227,9 @@ $(document).ready(function(){
 
 
 
-	
+
 $(document).ready(function(){
-		
+
 		//.parallax(xPosition, speedFactor, outerHeight) options:
 		//xPosition - Horizontal position of the element
 		//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
@@ -239,25 +239,25 @@ $(document).ready(function(){
 		$('#parallax-2').parallax("50%", 0.2);
 		$('#parallax-3').parallax("50%", 0.2);
 		$('#parallax-4').parallax("50%", 0.1);
-	
+
 	});
 
-	
-	
-	
-	
-	
+
+
+
+
+
 
 $(document).ready(function() {
   $('<ul />').prependTo('#flkr');
-  $.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?id=33672800@N00&lang=en-us&format=json&jsoncallback=?', function(data) {
+  $.getJSON('https://api.flickr.com/services/feeds/photos_public.gne?id=33672800@N00&lang=en-us&format=json&jsoncallback=?', function(data) {
     $.each(data.items, function(i,item) {
       var squares = (item.media.m).replace('_m.jpg', '_q.jpg');
       if(i <= 15){
         $('<img/>').attr({
-          alt: item.title, 
-          src: squares, 
-          height: '115', 
+          alt: item.title,
+          src: squares,
+          height: '115',
           width: '115'
         }).appendTo('#flkr ul').wrap('<li class="img"><a href="' + item.link + '"></a></li>');
       }
@@ -298,18 +298,18 @@ $(document).ready(function(){
 
 
 
-jQuery(document).ready(function () { 
-	(function ($) { 
-	
-	
+jQuery(document).ready(function () {
+	(function ($) {
+
+
 		var container = $('.portfolio-isotope');
-		
-		
-		function getNumbColumns() { 
-			var winWidth = $(window).width(), 
+
+
+		function getNumbColumns() {
+			var winWidth = $(window).width(),
 				columnNumb = 1;
-			
-			
+
+
 			if (winWidth > 1500) {
 				columnNumb = 3;
 			} else if (winWidth > 1200) {
@@ -321,63 +321,63 @@ jQuery(document).ready(function () {
 			} else if (winWidth > 300) {
 				columnNumb = 1;
 			}
-			
+
 			return columnNumb;
 		}
-		
-		
-		function setColumnWidth() { 
-			var winWidth = $(window).width(), 
-				columnNumb = getNumbColumns(), 
+
+
+		function setColumnWidth() {
+			var winWidth = $(window).width(),
+				columnNumb = getNumbColumns(),
 				postWidth = Math.floor(winWidth / columnNumb);
 
 		}
-		
-		$('#portfolio-filter #filter a').click(function () { 
+
+		$('#portfolio-filter #filter a').click(function () {
 			var selector = $(this).attr('data-filter');
-			
+
 			$(this).parent().parent().find('a').removeClass('current');
 			$(this).addClass('current');
-			
-			container.isotope( { 
-				filter : selector 
+
+			container.isotope( {
+				filter : selector
 			});
-			
-			setTimeout(function () { 
+
+			setTimeout(function () {
 				reArrangeProjects();
 			}, 300);
-			
-			
+
+
 			return false;
 		});
-		
-		function reArrangeProjects() { 
+
+		function reArrangeProjects() {
 			setColumnWidth();
 			container.isotope('reLayout');
 		}
-		
-		
-		container.imagesLoaded(function () { 
+
+
+		container.imagesLoaded(function () {
 			setColumnWidth();
-			
-			
-			container.isotope( { 
-				itemSelector : '.box', 
-				layoutMode : 'masonry', 
-				resizable : false 
+
+
+			container.isotope( {
+				itemSelector : '.box',
+				layoutMode : 'masonry',
+				resizable : false
 			} );
 		} );
-		
-		
-	
-		
-	
-		$(window).on('debouncedresize', function () { 
+
+
+
+
+
+		$(window).on('debouncedresize', function () {
 			reArrangeProjects();
-			
+
 		} );
-		
-	
+
+
 	} )(jQuery);
 } );
 
@@ -385,67 +385,67 @@ jQuery(document).ready(function () {
 
 
 /* DebouncedResize Function */
-	(function ($) { 
-		var $event = $.event, 
-			$special, 
+	(function ($) {
+		var $event = $.event,
+			$special,
 			resizeTimeout;
-		
-		
-		$special = $event.special.debouncedresize = { 
-			setup : function () { 
+
+
+		$special = $event.special.debouncedresize = {
+			setup : function () {
 				$(this).on('resize', $special.handler);
-			}, 
-			teardown : function () { 
+			},
+			teardown : function () {
 				$(this).off('resize', $special.handler);
-			}, 
-			handler : function (event, execAsap) { 
-				var context = this, 
-					args = arguments, 
-					dispatch = function () { 
+			},
+			handler : function (event, execAsap) {
+				var context = this,
+					args = arguments,
+					dispatch = function () {
 						event.type = 'debouncedresize';
-						
+
 						$event.dispatch.apply(context, args);
 					};
-				
-				
+
+
 				if (resizeTimeout) {
 					clearTimeout(resizeTimeout);
 				}
-				
-				
+
+
 				execAsap ? dispatch() : resizeTimeout = setTimeout(dispatch, $special.threshold);
-			}, 
-			threshold : 150 
+			},
+			threshold : 150
 		};
-	} )(jQuery);			
-	
+	} )(jQuery);
 
 
-	
+
+
 $(document).ready(function(){
-$(".iframe").colorbox({iframe:true, width:"100%", height:"100%"});	
+$(".iframe").colorbox({iframe:true, width:"100%", height:"100%"});
 });
 
-$(".group1").colorbox({rel:'group1'});	
+$(".group1").colorbox({rel:'group1'});
 
-	
-	
+
+
 $(document).ready(function() {
- 
+
   $("#blog").owlCarousel({
     navigation : true,
       items : 3,
-      itemsDesktop : [1000,2], 
+      itemsDesktop : [1000,2],
       itemsDesktopSmall : [900,2],
-      itemsTablet: [600,1], 
-      itemsMobile : false 
+      itemsTablet: [600,1],
+      itemsMobile : false
   });
- 
-});	
-	
-	
-	
-	
+
+});
+
+
+
+
 jQuery(document).ready(function ($) { // wait until the document is ready
 	$('#send').click(function(){ // when the button is clicked the code executes
 		$('.error').fadeOut('slow'); // reset the error messages (hides them)
@@ -498,25 +498,4 @@ jQuery(document).ready(function ($) { // wait until the document is ready
 
 		return false; // stops user browser being directed to the php file
 	}); // end click function
-});		
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-			
+});
