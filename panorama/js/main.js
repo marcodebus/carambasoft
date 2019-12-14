@@ -1,8 +1,8 @@
 var officeData = { 'panorama': [
-{ 
+{
 
 //1st panorama
-    'mapFile': 'textures/3d_Model.jpg',
+    'mapFile': 'textures/helpanimals.jpg',
     'navMarkers': [
       { 'target': 1,
         'x': -497.0484355184786,
@@ -14,17 +14,17 @@ var officeData = { 'panorama': [
       {'person': 'it',
         'x': 455.0522836660948,
         'y': -58.33536854966658,
-        'z': 198.80745435331792 
+        'z': 198.80745435331792
       },
       { 'person': 'bd',
         'x': 404.3501347961816,
         'y': -62.66661678215218,
-        'z': -287.3566836379287 
+        'z': -287.3566836379287
       }
     ]
-    
+
   }, //end 1st panorama
-  { 
+  {
 
 //1st panorama
     'mapFile': 'textures/mg_3010_3053.jpg',
@@ -44,7 +44,7 @@ var officeData = { 'panorama': [
       {'person': 'darkroom',
         'x': -216.82921204357737,
         'y': 0.8726641829491307,
-        'z': -450.5378244518269 
+        'z': -450.5378244518269
       },
       { 'person': 'exit',
         'x': 497.14559206230575,
@@ -52,7 +52,7 @@ var officeData = { 'panorama': [
         'z': -47.86967587528129
       }
     ]
-    
+
   }, //end 1st panorama
   {
 //2nd panorama
@@ -72,7 +72,7 @@ var officeData = { 'panorama': [
       }
     ]
   } //end 2nd panorama
-  
+
   ],
 
 //end panorama
@@ -103,5 +103,5 @@ var officeData = { 'panorama': [
       'role': 'Repaired by Yanto.',
       'image': 'img/yanto.jpg'
     }
-  } 
+  }
 };
