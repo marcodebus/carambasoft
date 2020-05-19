@@ -7,7 +7,7 @@ function execPrint($command) {
     }
 }
 // Print the exec output inside of a pre element
-print("<pre>" . execPrint("git pull https://marcodebus:Marcokite2@github.com/marcodebus/gasthaussoller.git master") . "</pre>");
+print("<pre>" . execPrint("git pull https://marcodebus:Marcokite2@github.com/marcodebus/carambasoft.git master") . "</pre>");
 
 
 //testcode....
