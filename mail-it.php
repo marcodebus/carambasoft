@@ -3,8 +3,8 @@
 /* Code by David McKeown - craftedbydavid.com */
 /* Editable entries are bellow */
 
-$send_to = "marcokite@yahoo.de";
-$send_subject = "Ajax form ";
+$send_to = "info@carambasoft.com";
+$send_subject = "Carambasoft Web Anfrage ";
 
 
 
