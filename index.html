@@ -3,6 +3,7 @@
 <!--[if gt IE 8]>
 <!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 
 	<!-- Basic Page Needs
   ================================================== -->
@@ -964,7 +965,8 @@ cookieconsent.run({"notice_banner_type":"headline","consent_type":"express","pal
 					<input name="email" id="email" type="text" />
 					<label for="message">Ihre Nachricht / Anfrage:</label>
 					<textarea name="message" id="message"></textarea>
-					
+					 <div class="g-recaptcha" data-sitekey="6LeN2eAUAAAAAHp6eCK25jTblQpEPfL8PjdE4NDg"></div>
+
 					<button class="send_message" id="send">Absenden</button>
 					<div class="error" id="err-form">Fehler bei der Eingabe</div>
 					<div class="error" id="err-timedout">Server Timeout bitte zu einem Späteren Zeitpunkt noch mal versuchen.</div>
